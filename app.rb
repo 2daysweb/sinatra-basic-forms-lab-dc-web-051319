@@ -12,7 +12,7 @@ end
 
 post '/puppy' do 
   puppy = Puppy.new(params["name"], params["breed"], params["age"])
-  binding.pry 
+ 
   @name = puppy.name 
   @breed = puppy.breed 
   @months_old = puppy.months_old 
