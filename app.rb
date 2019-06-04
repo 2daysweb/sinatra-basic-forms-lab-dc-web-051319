@@ -11,10 +11,10 @@ get '/new' do
 end 
 
 post '/puppy' do 
-  puppy = Puppy.new(@name, @breed, @months_old)
+  puppy = Puppy.new(params["name"], params["breed"], params["age"])
   @name = 
-  @breed = params["breed"]
-  age = params["age"]
+  @breed = 
+  age = 
   @months_old = age.to_s
 
   
